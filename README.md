@@ -36,7 +36,7 @@ print model.NamedEntityRecognizer(input_list)
 ```
 input_list = ['中国，是以华夏文明为源泉、中华文化为基础，并以汉族为主体民族的多民族国家，通用汉语、汉字，汉族与少数民族被统称为“中华民族”，又自称为炎黄子孙、龙的传人。']
 model = LTP_MODEL()
-print model.SyntaxParser(intput_list)
+print model.SyntaxParser(input_list)
 ```
 - 三元组抽取
 
@@ -53,9 +53,9 @@ for e in Dynamic_relation[0]:
 - 语义角色分析
 
 ```
-input_sentence = "中国，是以华夏文明为源泉、中华文化为基础，并以汉族为主体民族的多民族国家，通用汉语、汉字，汉族与少数民族被统称为“中华民族”，又自称为炎黄子孙、龙的传人"
+input_list = ["中国，是以华夏文明为源泉、中华文化为基础，并以汉族为主体民族的多民族国家，通用汉语、汉字，汉族与少数民族被统称为“中华民族”，又自称为炎黄子孙、龙的传人"]
 model = LTP_MODEL()
-print model.SementicRoleLabeller(intput_list)
+print model.SementicRoleLabeller(input_list)
 ```
 ### 后期还将添加关键字抽取功能
 
