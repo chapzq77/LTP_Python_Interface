@@ -364,8 +364,6 @@ if __name__ == '__main__':
     print model.NamedEntityRecognizer(intput_list,Entity_dist=True)[0]['place'][0]
     print model.NamedEntityRecognizer(intput_list)
     print model.SyntaxParser(intput_list)
-    head = parent+1
-    relation = relate 
     Subjective_guest,Dynamic_relation,Guest,Name_entity_relation = model.triple_extract(input_sentence)
     for e in Subjective_guest[0]:
         print e,
